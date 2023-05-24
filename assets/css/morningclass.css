@@ -1,0 +1,142 @@
+/* CSS SYNTAX */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 2rem;
+}
+
+#myid{
+    padding: 2rem;
+    margin: 2rem;
+    background-color: aqua;
+}
+
+.myclass p, h1{
+    color:white;
+    font-style: italic;
+    border: 2px dashed pink;
+    padding: 2rem;
+    margin: 2rem;
+    text-align:left !important;
+}
+
+
+details{
+    
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: beige;
+}
+
+p.para{
+    color: red;
+    padding: 4rem 1rem;
+    background-color: cyan;
+    border: 2px solid yellow;
+    margin: 2rem 0;
+}
+
+/* input[type="text"] { */
+    input{
+    width: 300px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom: 2px solid darkgray;
+}
+
+input:focus{
+    outline: none;
+} 
+
+
+.bg{
+    /* background-image: url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+
+   
+    background: url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') no-repeat right bottom fixed;
+    background-size: cover;
+    cursor: ew-resize;
+    border: 3px solid red;
+    color:#fff:
+    height: 100vh;
+ 
+}
+
+.bg h1{
+    font-size: 5rem;
+    /* text-decoration-style: dashed; 
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2rem; */
+    text-decoration: underline dashed 2rem pink;
+    text-align: center;
+    /* text-decoration: none; */
+}
+
+pre, b, p {
+
+    color: aqua;
+    background-color: purple;
+    /* text-align: justify; */
+    /* height: 400px; */
+    vertical-align: super;
+    text-indent: 50px;
+    text-transform: capitalize;
+    word-spacing: 0.5rem;
+    line-height: 1.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    font-weight: 900;
+
+/* p
+{
+    background-color: aqua;
+    color: red;
+    text-align:center;
+}
+
+.wrapper
+{
+    background-color:antiquewhite;
+    padding: 1rem;
+    border: 1px solid red;
+}
+
+body
+{
+    background-color:#ccc;
+    margin: 2 rem;
+}
+
+.wrapper p
+{
+    color:  purple;
+    font-size: larger;
+}
+
+p.mypre {
+
+    color: blue;
+} */
+/* .para1,#myid, h1, h2, header
+{
+    background-color: yellow;
+    color: black;
+    text-align:center;
+} */
+
+/* #myid
+{
+    color: yellow;
+    padding: 2rem;
+    background-color: bisque;
+} */
