@@ -9,6 +9,29 @@ body{
     padding: 2rem;
 }
 
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+}
+
+.nav-header li {
+    display: inline-block;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: width:
+}
+
+.nav.header a{
+    text-decoration: none;
+}
+
+.main-nav{
+    list-style: none;
+}
+
 #myid{
     padding: 2rem;
     margin: 2rem;
@@ -66,20 +89,67 @@ input:focus{
     background-size: cover;
     cursor: ew-resize;
     border: 3px solid red;
-    color:#fff:
+    color:#fff;
     height: 100vh;
  
 }
 
 .bg h1{
     font-size: 5rem;
+    /* opacity: 0.2; */
+    /* visibility: hidden;
+    display: none; */
+display:inline-block;
+ transition: ease 0.9s;
     /* text-decoration-style: dashed; 
     text-decoration-line: underline;
     text-decoration-color: red;
     text-decoration-thickness: 2rem; */
-    text-decoration: underline dashed 2rem pink;
-    text-align: center;
+    /* text-decoration: underline dashed 2rem pink;
+    text-align: center; */
     /* text-decoration: none; */
+}
+
+.bg h1:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+::-webkit-scrollbar{
+    width: 10px
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(120, 120, 147);
+}
+
+::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 360px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #fff;
+}
+
+
+/* CSS POSITIONING */
+
+
+.welcomediv{
+
+    border: 1px solid red;
+    width: fit-content;
+    float: left;
+    clear: both;
+    /* position: sticky; */
+    /* position: relative; */
+    /* if you don't apply a top value to a sticky positioning it won't work */
+    top: 0;
+    /* right: 0;
+    bottom: 0;
+    left: 0; */
+    color: #0b0303;
 }
 
 pre, b, p {
@@ -96,6 +166,7 @@ pre, b, p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-variant: small-caps;
     font-weight: 900;
+}
 
 /* p
 {
