@@ -12,6 +12,7 @@ body{
 .nav-header{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
     border: 1px solid;
 }
@@ -20,16 +21,17 @@ body{
     display: inline-block;
     padding: 0.5rem;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    border: width:
 }
 
-.nav.header a{
+.nav-header a{
     text-decoration: none;
 }
 
 .main-nav{
-    list-style: none;
+    /* align-items: baseline; */
+ align-self: baseline;
+ /* background-color: #ccc; */
+ /* flex: 1;   */
 }
 
 #myid{
@@ -84,6 +86,9 @@ input:focus{
     background-attachment: fixed;
     background-position: center; */
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
     background: url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') no-repeat right bottom fixed;
     background-size: cover;
@@ -140,8 +145,8 @@ display:inline-block;
 
     border: 1px solid red;
     width: fit-content;
-    float: left;
-    clear: both;
+    /* float: left;
+    clear: both; */
     /* position: sticky; */
     /* position: relative; */
     /* if you don't apply a top value to a sticky positioning it won't work */
