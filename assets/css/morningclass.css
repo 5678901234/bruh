@@ -74,6 +74,8 @@ p.para{
     padding: 0.5rem 1rem;
     border: none;
     border-bottom: 2px solid darkgray;
+    background-color: transparent;
+    display: block;
 }
 
 input:focus{
@@ -246,9 +248,19 @@ p.mypre {
 
 }
 
+
+input[type="submit"], input[type="reset"]{
+    background-color: #0b0303;
+    color: #f1f1f1;
+    width: fit-content;
+    margin: 1rem 0;
+    padding: 0.4rem 1 rem;
+    display: inline-block;
+}
+
 fieldset{
     max-width: 500px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 /* Css media query: media quieries are sued for specifying css rules for different break points or screen sizes. */
