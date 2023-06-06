@@ -30,9 +30,10 @@ body{
 
 .main-nav{
     /* align-items: baseline; */
- align-self: baseline;
+ /* align-self: baseline; */
  /* background-color: #ccc; */
  /* flex: 1;   */
+ display: none;
 }
 
 #myid{
@@ -101,7 +102,7 @@ input:focus{
 }
 
 .bg h1{
-    font-size: 5rem;
+    font-size: 2rem;
     /* opacity: 0.2; */
     /* visibility: hidden;
     display: none; */
@@ -201,7 +202,7 @@ body
 }
 
 p.mypre {
-
+ 
     color: blue;
 } */
 /* .para1,#myid, h1, h2, header
@@ -220,7 +221,7 @@ p.mypre {
 
 .grid-wrap{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     /* grid-template-rows: 40rem 15rem; */
    /* column-gap: 40px;
    row-gap: 20px; */
@@ -243,4 +244,35 @@ p.mypre {
     padding: 2rem;
     background-color: #f1f1f1;
 
+}
+
+fieldset{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Css media query: media quieries are sued for specifying css rules for different break points or screen sizes. */
+@media only screen and (min-width: 678px){
+    body{
+        background-color: pink;
+    }
+
+    .grid-wrap{
+        
+        grid-template-columns: auto auto auto;
+    }
+
+    .main-nav{
+display: flex;
+align-self: baseline;
+
+    }
+
+    .bg h1{
+        font-size: 5rem;
+    }
+    
+    #toggle{
+        display: none;
+    }
 }
