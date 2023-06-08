@@ -24,13 +24,28 @@ body{
     text-transform: uppercase;
 }
 
-.nav-header a{
+.main-nav a{
+    padding: 0.5rem;
     text-decoration: none;
+    text-transform: uppercase;
+    transition: linear 0.4s;
+    display: inline-block;
+    color: white;
+    
+}
+
+.nav-header a:hover{
+    
+    color: darkgrey;
+    /* text-decoration: line-through; */
+    text-decoration-color: #0b0303;
+    transform: scale(1.5);
+/* transform: scale(.2); */
 }
 
 .main-nav{
     /* align-items: baseline; */
- /* align-self: baseline; */
+ align-self: baseline;
  /* background-color: #ccc; */
  /* flex: 1;   */
  display: none;
@@ -94,9 +109,13 @@ input:focus{
     align-items: center;
     justify-content: center;
    
-    background: url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') no-repeat right bottom fixed;
+    /* background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(14,8,246, 0.4)), url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') fixed no-repeat center; */
+    /* background: radial-gradient( rgba(14,8,246, 0.2) 50%, rgba(0,0,0,0.9)), url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') fixed no-repeat center; */
+background: conic-gradient( rgba(14,8,246, 0.2) 50%, rgba(0,0,0,0.9)), url('/assets/img/01-layers-milos-tonchevski-unsplash.jpg') fixed no-repeat center;
+
     background-size: cover;
-    cursor: ew-resize;
+    /* cursor: ew-resize; */
+    cursor: pointer;
     border: 3px solid red;
     color:#fff;
     height: 100vh;
@@ -147,6 +166,9 @@ display:inline-block;
 
 .welcomediv{
 
+
+    animation: myanimation linear 2s;
+    /* transition: ease-in 0.9s; */
     border: 1px solid red;
     width: fit-content;
     /* float: left;
@@ -175,6 +197,14 @@ pre, b, p {
     font-family: 'Poppins', sans-serif;
     font-variant: small-caps;
     font-weight: 900;
+}
+
+.backgroundforcontactus{
+    background-image: url(/assets/img/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+
 }
 
 /* p
@@ -245,8 +275,16 @@ p.mypre {
 .grid-wrap > div{
     padding: 2rem;
     background-color: #f1f1f1;
-
 }
+
+.grid-wrap > div:hover{
+    padding: 2rem;
+    background-color: #f1f1f1;
+    /* transform: rotate(90deg); */
+    transform: skewX(-10deg);
+    cursor: pointer;
+}
+
 
 
 input[type="submit"], input[type="reset"]{
@@ -272,6 +310,8 @@ fieldset{
     .grid-wrap{
         
         grid-template-columns: auto auto auto;
+        transition: 0.4s;
+        overflow: hidden;
     }
 
     .main-nav{
@@ -287,4 +327,81 @@ align-self: baseline;
     #toggle{
         display: none;
     }
+}
+
+
+/* Flip Card animation */
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 10000px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back{
+    background-color:#2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+ 
+/*  
+CSS Animations which uses the query @keyframes "animation name"{
+
+} */
+
+/* @keyframes myanimation
+{
+0%{
+transform: scale(.5);
+}
+25%
+{
+    transform: scale(.9);
+}
+50%{
+    transform: scale(1.5);
+}
+100%{
+    transform: scale(1.9);
+}
+} */
+
+
+
+@keyframes myanimation
+{
+0%{
+transform: translate(-100%);
+}
+25%
+{
+    transform: translate(50%);
+}
+50%{
+    transform: translate(100%);
+}
+
 }
