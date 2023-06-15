@@ -4,12 +4,14 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
-
+/* border: 1px solid red; */
 }
 
 .body{
     width: 100%;
-    padding: 0 0 20px;
+    border: pink 1px solid;
+    /* padding: 0 0 20px; */
+
     /* height: 100%; */
 }
 
@@ -18,7 +20,7 @@ font-family: 'Poppins', sans-serif;
     justify-content: space-between;
     height: 15%;
 width: 100%;
-flex: 1;
+/* flex: 1; */
  align-content: center;
  transition: 0.9s ease ;
  
@@ -27,7 +29,8 @@ flex: 1;
 .main-header li{
     
 display: inline-block;
-padding: 0.5rem;
+display: none;
+/* padding: 0.5rem; */
 text-transform: uppercase;
 padding: 1.4rem;
 }
@@ -38,6 +41,8 @@ padding: 1.4rem;
 }
 
 .main-nav a{
+    visibility: collapse;
+    height: 40%;
     transition: ease 0.9s; 
     text-decoration: none;
 }
@@ -95,6 +100,7 @@ color: white;
     color: white;
 background-color: red;
 text-align: center;
+box-shadow: 2px 2px 3px darkgrey;
 }
 
 .enquirybutton a{
@@ -123,22 +129,35 @@ text-align: center;
     font-size: xx-large;
 }
 
+
+
 .gridstyle{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    /* display: grid; */
+    justify-content: center;
+    grid-template-columns: auto;
+    margin: 0px 0px auto;
     gap: 10px;
 }
 
 .firstgrid{
+   
     /* background-color: aqua; */
-    padding: 1rem;
+    display: grid;
+    width: 100% !important; 
+    padding: 2rem;
+  
 }
 
 .firstgridh1{
+
     color: red;
     text-align: center;
     text-shadow: 2px 2px #1C1c1c;
 }
+
+/* .problemchild{
+    width: 100%;
+} */
 
 .secondgrid{
     padding: 1.5rem;
@@ -164,10 +183,12 @@ text-align: center;
 
 .subgrid{
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5%;
-    height: 40%;
+    grid-template-columns: auto auto;
+    /* gap: 5%; */
+    gap: 10px;
+    /* height: 5%; */
     padding: 1rem;
+    align-content: center;
     
 }
 
@@ -231,10 +252,10 @@ aside:hover{
 
 .footballsectiongrid{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     color: red;
     /* border: 1px blue solid; */
-    gap: 5%;
+    /* gap: 5%; */
     padding: 2rem;
     
 }
@@ -356,6 +377,56 @@ text-transform: uppercase;
     color: white;
 }
 
+.space{
+    background-color: white;
+    height:5px;
+}
 @media only screen and (min-width: 678px){
+
+    .main-header li{
+    
+        display: inline-block;
+        /* padding: 0.5rem; */
+        text-transform: uppercase;
+        padding: 1.4rem;
+        }
+
+        .main-nav a{
+        visibility: visible;
+            height: 40%;
+            transition: ease 0.9s; 
+            text-decoration: none;
+        }
+
+        .gridstyle{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: auto auto auto;
+            margin: 0px 0px auto;
+            gap: 10px;
+        }
+
+        
+.subgrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* gap: 5%; */
+    gap: 10px;
+    /* height: 5%; */
+    padding: 1rem;
+    align-content: center;
+    
+}
+
+
+.footballsectiongrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: red;
+    /* border: 1px blue solid; */
+    gap: 5%;
+    padding: 2rem;
+    
+}
 
 }
