@@ -250,6 +250,9 @@ p.mypre {
     padding: 2rem;
     background-color: bisque;
 } */
+.h3onhover:hover{
+    cursor: pointer;
+}
 
 .grid-wrap{
     display: grid;

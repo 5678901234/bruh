@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta>
-    <script></script>
     <base href="">
     <link rel="stylesheet" href="assets\css\morningclass.css">
+    <script src="/assets/script.js"defer></script>
+    <!-- <script src="/assets/script.js" defer></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -15,7 +16,6 @@
     <link rel="shortcut icon" href="assets\img\logo.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="view-port" content="width=device-width, initial-scale=1.0">
-    <noscript></noscript>
     <title>Home Page</title>
     <!-- <style>
 
@@ -39,8 +39,12 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjlEOgjrmKB1ZRS6EnJaHkulR1Ra_bFFH1A&usqp=CAU" alt="logo" width="50"/>
                 
             </a>
-            
-                <nav class="main-nav">
+            <script>
+                let date = new Date();
+            </script>
+            <h3 onclick ="this.innerText= ((date.getHours().toString()).length>1? date.getHours() : '0'+date.getHours()) +' : '+ ((date.getMinutes().toString()).length>1? date.getMinutees() : '0'+date.getMinutes())">Show Time</h3>
+              
+            <nav class="main-nav">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -60,12 +64,17 @@
                 <img src="/assets/img/toggle.png" alt="toggle" srcset="" id="toggle">
             </a>
         </header>
-
+  
     <div class= "bg">
-<div class="welcomediv">
+<div class="welcomediv" id="welcomediv">
     <h1>WELCOME TO MRSOFT</h1>
     <h2>We are here for you</h2>
 </div>
+
+<form action="">
+<input type ="text" placeholder="Your value here" autofocus id="myValue">
+<button id="btnGet">Submit</button>
+</form>
 </div>
     <!-- GRID -->
    
@@ -74,7 +83,7 @@
 
     <section class="grid-wrap">
 
-        <div class="div1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo at. Eaque accusamus quasi recusandae cumque officia harum sapiente pariatur!</div>
+        <div class="div1" id="target"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo at. Eaque accusamus quasi recusandae cumque officia harum sapiente pariatur!</div>
         <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo at. Eaque accusamus quasi recusandae cumque officia harum sapiente pariatur!</div>
         <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo at. Eaque accusamus quasi recusandae cumque officia harum sapiente pariatur!</div>
         <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, illo at. Eaque accusamus quasi recusandae cumque officia harum sapiente pariatur!</div>
@@ -83,18 +92,6 @@
        
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- <div>
         
             <img src="assets\img\01-layers-milos-tonchevski-unsplash.jpg" width="500" height="500" alt="background image" usemap="#myMap"/>
@@ -240,5 +237,6 @@ Price        Item
         &copy;&nbsp;2023
         &reg;
     </footer>
+    <script src="/assets/script.js"></script>
 </body>
 </html>
