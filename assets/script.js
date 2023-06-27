@@ -1,4 +1,3 @@
-
 // let h1 = document.createElement('h1')
 // let welcomediv= document.querySelector('#welcomediv')
 // let content= 'Hello, world!'
@@ -109,11 +108,52 @@
 // }
 // })
 
-let clickvalue = document.querySelector('#informat')
-let target= document.querySelector("#main-header")
-informat.textContent= target.value
-clickvalue.addEventListener('click')
-{
-    e.preventDefault()
-    target.textContent= clickvalue.value
-}
+// If you use confirm in an alert method it gives you the ability to click on okay and cancel
+
+// A Function is a block of codes that performs a task, 
+
+// let obj = {
+// name: 'Anya',
+// age: 40, 
+// state: 'Ebonyi',
+
+// bio(){
+//     return this.name + this.age + this.state
+// }
+
+// }
+
+// let clickvalue = document.querySelector('#informat')
+// let target= document.querySelector("#main-header")
+// informat.textContent= target.value
+// clickvalue.addEventListener('click')
+// {
+//     e.preventDefault()
+//     target.textContent= clickvalue.value
+// }
+
+// CONDITIONAL OPERATORS
+// || is used to say or in conditional statement
+// && is used to say and in conditional statement 
+
+// Type conversion 
+// In Javascript, this is called type casting.
+
+// target.innerHTML = Number(num1.value) + Number(num2.value)
+// target.innerHTML = parseFloat(num1.value) + parseFloat(num2.value)
+// target.innerHTML = parseInt(num1.value) + parseInt(num2.value)
+
+
+let age = document.querySelector('#age')
+let name = document.querySelector('#name')
+let btnVote= document.querySelector('#btnVote')
+
+btnVote.addEventListener('click', ()=> {
+    if(age.value <= 18 || age.value > 100){
+
+        alert(`Please ${name.value} you cannot vote now`)
+    } else{
+alert(`${name.value} please vote`)
+    }
+})
+
