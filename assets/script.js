@@ -144,16 +144,73 @@
 // target.innerHTML = parseInt(num1.value) + parseInt(num2.value)
 
 
-let age = document.querySelector('#age')
-let name = document.querySelector('#name')
-let btnVote= document.querySelector('#btnVote')
+// Write a javascript program to calculate the area of a circle given the radius 
+// Write a program to calculate the price of a good, when the discount of 5% is given
+// Write a program to calculate simple interest when the principle, rate and time is given
+// Calculate the area of a triangle when the base and the height is given.
 
-btnVote.addEventListener('click', ()=> {
-    if(age.value <= 18 || age.value > 100){
 
-        alert(`Please ${name.value} you cannot vote now`)
-    } else{
-alert(`${name.value} please vote`)
-    }
-})
+// let age = document.querySelector('#age')
+// let name = document.querySelector('#name')
+// let btnVote= document.querySelector('#btnVote')
 
+// btnVote.addEventListener('click', ()=> {
+//     if(age.value <= 18 || age.value > 100){
+
+//         alert(`Please ${name.value} you cannot vote now`)
+//     } 
+//     else{
+// alert(`${name.value} please vote`)
+//     }
+// })
+
+//Question 1
+
+// var radius = prompt("Enter radius of the circle: ");
+//   if (radius <= 0) {
+// console.log("Radius must be a positive number.");
+//   }
+//   else{
+//   var area = 3.142 * Math.pow(radius, 2);
+//  console.log("The area of the circle with radius", radius, "is", area);
+// }
+
+// QUESTION 2
+// var originalprice = prompt("Enter the Original price: ");
+// var discountpercentage = prompt("Enter the Discount Percentage: ");
+
+//   if (originalprice <= 0 || discountpercentage < 0 || discountpercentage > 100) {
+//     console.log("Invalid input. Please provide valid values.");
+//   }
+
+
+// else{  
+// var discountamount = (discountpercentage / 100) * originalprice;
+// var discountedprice = originalprice - discountamount;
+// console.log("The price after a ", discountpercentage, "% discount is ", discountedprice);
+// }
+
+// QUESTION 3
+
+// var principal = prompt("Enter Principal: ");
+// var rate = prompt("Enter Rate: ");
+// var time = prompt("Enter Time: ");
+//   if (principal <= 0 || rate <= 0 || time <= 0) {
+//     console.log("Invalid input. Please provide valid values.");
+//   }
+// else{
+// var interest = (principal * rate * time) / 100;
+// console.log("The simple interest is", interest);
+// }
+
+// QUESTION 4
+
+// var base = prompt("Enter Base: ");
+// var height = prompt("Enter Height: ");
+//   if (base <= 0 || height <= 0) {
+//     console.log("Invalid input. Please provide valid values.");
+//   }
+// else{
+// var area = (base * height) / 2;
+// console.log("The area of the triangle is: ", area);
+// }
